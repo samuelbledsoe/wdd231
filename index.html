@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 231 Course Home Page" />
+  <meta name="author" content="Samuel Bledsoe" />
+  <title>WDD 231 - Home</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 640px)" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.webp" alt="Sam Bledsoe Logo" />
+      <span class="site-name">Samuel Bledsoe</span>
+    </div>
+    <button id="menuBtn" aria-label="Open Navigation Menu">☰</button>
+  </header>
+
+
+  <nav id="navMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Chamber Project</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="intro-grid">
+      <section class="about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I’m Sam Bledsoe—a web developer in training with a passion for clean design, smart code, and meaningful purpose. I’m currently studying software development through BYU-Idaho’s online program, where I’ve been building skills in HTML, CSS, JavaScript, and Python.
+
+          What drives me is the vision of a future where I can blend creativity with code to build tools and sites that help real people solve real problems. I’m especially interested in front-end development, UX, and meaningful tech—projects that make life easier, better, or more beautiful.
+
+          While I have big career goals, my greatest motivation comes from home. I’m a proud husband and dad, and my family is at the center of everything I do. Every late-night study session, every line of code—it’s all building toward a life of stability, adventure, and purpose for them.
+
+          Thanks for stopping by my page!
+        </p>
+      </section>
+
+      <section class="photo">
+        <h2>Student Photo</h2>
+        <img src="images/student.webp" alt="Student Photo" />
+      </section>
+    </div>
+
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="buttons">
+        <button onclick="displayCourses(courses)">All</button>
+        <button onclick="displayCourses(filterCourses('cse'))">CSE</button>
+        <button onclick="displayCourses(filterCourses('wdd'))">WDD</button>
+      </div>
+      <div id="course-cards"></div>
+      <p class="credits">The total credits for course listed above is 6<span id="credit-total"></span></p>
+
+      <section class="social-section">
+        <h2>Connect with Me</h2>
+        <div class="socials">
+          <a href="https://github.com/samuelbledsoe" target="_blank">
+            <img src="images/github.svg" alt="GitHub" />
+          </a>
+          <a href="https://linkedin.com/in/samuelbledsoe" target="_blank">
+            <img src="images/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.facebook.com/samuel.bledsoe.33" target="_blank">
+            <img src="images/facebook.png" alt="Facebook icon" />
+          </a>
+        </div>
+      </section>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Samuel Bledsoe • Illinois, USA</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

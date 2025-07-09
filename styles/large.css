@@ -1,0 +1,41 @@
+@media (min-width: 640px) {
+  #menuBtn {
+    display: none;
+  }
+
+  nav {
+    display: block !important;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    background: #222;
+  }
+
+  nav ul li a {
+    border: none;
+    padding: 1rem 2rem;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  #course-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .course {
+    flex: 1 1 200px;
+    max-width: 200px;
+  }
+
+  footer .socials {
+    margin-bottom: 0.5rem;
+  }
+}
