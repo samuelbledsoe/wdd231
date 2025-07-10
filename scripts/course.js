@@ -92,13 +92,15 @@ function displayCourses(courseList) {
       card.classList.add("completed");
     }
 
-    card.innerHTML = `
-      <h3>${course.subject} ${course.number} ${course.completed ? '✓' : ''}</h3>
-      <p><strong>${course.title}</strong></p>
-      <p>${course.description}</p>
-      <p><strong>Credits:</strong> ${course.credits}</p>
-      <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
-    `;
+card.innerHTML = `
+  <h3>${course.subject} ${course.number}</h3>
+  <p><strong>${course.title}</strong>${course.completed ? ' <span class="checkmark">✓ Completed</span>' : ''}</p>
+  <p>${course.description}</p>
+  <p><strong>Credits:</strong> ${course.credits}</p>
+  <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+`;
+
+
 
     container.appendChild(card);
     totalCredits += course.credits;
