@@ -10,7 +10,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -23,7 +23,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -35,7 +35,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -61,7 +61,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -78,3 +78,49 @@ const courses = [
         completed: false
     }
 ]
+
+function displayCourses(courseList) {
+  const container = document.getElementById("course-cards");
+  container.innerHTML = "";
+
+  let totalCredits = 0;
+
+  courseList.forEach(course => {
+    const card = document.createElement("div");
+    card.className = "course";
+    if (course.completed) {
+      card.classList.add("completed");
+    }
+
+    card.innerHTML = `
+      <h3>${course.subject} ${course.number} ${course.completed ? '✓' : ''}</h3>
+      <p><strong>${course.title}</strong></p>
+      <p>${course.description}</p>
+      <p><strong>Credits:</strong> ${course.credits}</p>
+      <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+    `;
+
+    container.appendChild(card);
+    totalCredits += course.credits;
+  });
+
+  document.getElementById("credit-total").textContent = totalCredits;
+}
+
+function filterCourses(subject) {
+  return courses.filter(course => course.subject === subject.toUpperCase());
+}
+
+// Hook up button clicks
+document.getElementById("allBtn").addEventListener("click", () => {
+  displayCourses(courses);
+});
+document.getElementById("wddBtn").addEventListener("click", () => {
+  displayCourses(filterCourses("wdd"));
+});
+document.getElementById("cseBtn").addEventListener("click", () => {
+  displayCourses(filterCourses("cse"));
+});
+
+// Show all by default
+displayCourses(courses);
