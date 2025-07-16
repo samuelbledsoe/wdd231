@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Worden Family Diner",
+    "address": "101 Main Street, Worden, IL",
+    "phone": "618-555-1234",
+    "website": "https://wordenfamilydiner.com",
+    "image": "diner.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Prairie Auto & Tire",
+    "address": "210 Route 4, Worden, IL",
+    "phone": "618-555-2345",
+    "website": "https://prairieauto.com",
+    "image": "auto.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Worden General Store",
+    "address": "150 Oak Street, Worden, IL",
+    "phone": "618-555-3456",
+    "website": "https://wordengeneral.com",
+    "image": "store.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Sunrise Landscaping & Lawn Care",
+    "address": "300 Greenway Dr, Worden, IL",
+    "phone": "618-555-4567",
+    "website": "https://sunriselawncare.com",
+    "image": "landscaping.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Country Roots Salon",
+    "address": "55 Elm Street, Worden, IL",
+    "phone": "618-555-5678",
+    "website": "https://countryrootssalon.com",
+    "image": "salon.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Starlight Roofing & Gutters",
+    "address": "789 Ridge Road, Worden, IL",
+    "phone": "618-555-6789",
+    "website": "https://starlightroofing.com",
+    "image": "roofing.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Harvest Moon Yoga",
+    "address": "2 Harmony Way, Worden, IL",
+    "phone": "618-555-7890",
+    "website": "https://harvestmoonyoga.com",
+    "image": "yoga.jpg",
+    "membership": 2
+  }
+]
