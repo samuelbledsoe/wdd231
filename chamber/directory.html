@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Worden Illinois Chamber of Commerce Directory Page">
   <meta name="author" content="Samuel Bledsoe">
@@ -16,10 +16,14 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <header>
-    <h1>Worden Chamber of Commerce Directory</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -31,6 +35,7 @@
   </header>
 
   <main>
+    <h1>Worden Chamber of Commerce Directory</h1>
     <h2>Business Directory</h2>
     <div class="view-toggle">
       <button id="grid">Grid View</button>
@@ -45,7 +50,7 @@
     <p id="lastModified"></p>
   </footer>
 
-  <script src="js/directory.js"></script>
+  <script src="scripts/directory.js"></script>
   <script>
     document.getElementById("lastModified").textContent =
       "Last Modified: " + document.lastModified;
