@@ -1,16 +1,12 @@
 async function getMembers() {
-  try {
-    const response = await fetch('data/members.json');
-    const members = await response.json();
-    displayMembers(members);
-  } catch (error) {
-    console.error('Error loading members:', error);
-  }
+  const response = await fetch('data/members.json');
+  const data = await response.json();
+  displayMembers(data);
 }
 
 function displayMembers(members) {
   const directory = document.querySelector('#directory');
-  directory.innerHTML = ''; // Clear previous content
+  directory.innerHTML = '';
 
   members.forEach(member => {
     const card = document.createElement('section');
@@ -45,7 +41,6 @@ function displayMembers(members) {
   });
 }
 
-// Toggle view layout
 document.querySelector("#grid").addEventListener("click", () => {
   document.querySelector("#directory").classList.add("grid-view");
   document.querySelector("#directory").classList.remove("list-view");
@@ -55,5 +50,8 @@ document.querySelector("#list").addEventListener("click", () => {
   document.querySelector("#directory").classList.add("list-view");
   document.querySelector("#directory").classList.remove("grid-view");
 });
+
+document.getElementById("lastModified").textContent =
+  "Last Modified: " + document.lastModified;
 
 getMembers();
