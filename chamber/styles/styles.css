@@ -31,27 +31,50 @@
   z-index: 10;
 }
 
-/* Show the menu button only on small screens */
+
+/* Hide menu on mobile by default */
+#navMenu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
+
+  header {
+    padding: 2.5rem 1rem; /* increase top/bottom space */
+    min-height: 120px;     /* optional: enforce height */
+  }
+
+  #menuBtn {
+    top: 1.5rem; /* adjust to match new height */
+  }
+
+  nav ul {
+    top: 120px; /* update position of dropdown menu */
+  }
+
   #menuBtn {
     display: block;
   }
 
-  nav ul {
+  #navMenu ul {
     display: none;
     flex-direction: column;
-    gap: 0.5rem;
     background-color: #004466;
     padding: 1rem;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    text-align: center;
+    margin-top: 1rem;
   }
 
-  nav ul.open {
+  #navMenu.open ul {
     display: flex;
+  }
+
+  #navMenu ul li {
+    margin: 0.5rem 0;
+    text-align: center;
   }
 }
 
