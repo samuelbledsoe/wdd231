@@ -20,46 +20,38 @@
 /* Hamburger button */
 #menuBtn {
   display: none;
-  font-size: 2rem;
   background: none;
   border: none;
   color: white;
+  font-size: 2rem;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 10;
+  top: 1.2rem;
+  right: 1.5rem;
   cursor: pointer;
+  z-index: 10;
 }
 
-/* Hide menu on mobile by default */
-#navMenu ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
+/* Show the menu button only on small screens */
 @media (max-width: 768px) {
   #menuBtn {
     display: block;
   }
 
-  #navMenu ul {
+  nav ul {
     display: none;
     flex-direction: column;
+    gap: 0.5rem;
     background-color: #004466;
     padding: 1rem;
-    margin-top: 1rem;
-  }
-
-  #navMenu.open ul {
-    display: flex;
-  }
-
-  #navMenu ul li {
-    margin: 0.5rem 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
     text-align: center;
+  }
+
+  nav ul.open {
+    display: flex;
   }
 }
 
