@@ -72,3 +72,8 @@ async function loadSpotlights() {
 
 getWeather();
 loadSpotlights();
+
+document.getElementById("menuBtn").addEventListener("click", function () {
+  document.getElementById("navMenu").classList.toggle("open");
+});
+
