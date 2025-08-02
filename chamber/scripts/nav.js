@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menuBtn");
-  const navLinks = document.getElementById("navLinks");
+  const navLinks = document.getElementById("navMenu");
 
-  if (menuBtn && navLinks) {
+  if (menuBtn && navMenu) {
     menuBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
+        navMenu.classList.toggle("open");
+        main.classList.toggle("push-down");
     });
   }
 

@@ -17,7 +17,9 @@
   }
 }
 
-/* Hamburger button */
+/* =============================
+   Desktop Styles
+============================= */
 #menuBtn {
   display: none;
   background: none;
@@ -28,36 +30,37 @@
   top: 1.2rem;
   right: 1.5rem;
   cursor: pointer;
-  z-index: 10;
+  z-index: 1000;
 }
 
-
-/* Hide menu on mobile by default */
 #navMenu ul {
   display: flex;
   flex-direction: row;
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 1rem;
+  justify-content: center;
 }
 
+/* =============================
+   Mobile Styles
+============================= */
 @media (max-width: 768px) {
-
+  body.menu-open main {
+    margin-top: 200px; /* adjust as needed */
+  }
+  
   header {
-    padding: 2.5rem 1rem; /* increase top/bottom space */
-    min-height: 120px;     /* optional: enforce height */
-  }
-
-  #menuBtn {
-    top: 1.5rem; /* adjust to match new height */
-  }
-
-  nav ul {
-    top: 120px; /* update position of dropdown menu */
+    padding: 2.5rem 1rem;
+    min-height: 120px;
+    position: relative;
   }
 
   #menuBtn {
     display: block;
+    top: 1rem;
+    right: 1rem;
   }
 
   #navMenu ul {
@@ -65,7 +68,11 @@
     flex-direction: column;
     background-color: #004466;
     padding: 1rem;
-    margin-top: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    z-index: 999;
   }
 
   #navMenu.open ul {
@@ -76,7 +83,21 @@
     margin: 0.5rem 0;
     text-align: center;
   }
+
+  #navMenu ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+
+  #navMenu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
 }
+
 
 
 /* Base Styles */
@@ -107,7 +128,9 @@ nav ul {
 
 nav li {
   margin: 0;
+  display: inline-block; /* or remove block display if present */
 }
+
 
 nav a {
   color: white;
@@ -119,7 +142,10 @@ nav a {
 
 nav a.active {
   border-bottom: 2px solid #ffdd57;
+  display: inline-block;      /* 👈 prevents full width */
+  padding-bottom: 0.2rem;
 }
+
 
 
 nav a:hover,
@@ -453,4 +479,10 @@ input, textarea, select {
   top: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  main.push-down {
+    margin-top: 200px; /* Adjust based on your nav height */
+  }
 }

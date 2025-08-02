@@ -6,24 +6,30 @@
   <title>Join the Chamber | Worden Illinois Chamber of Commerce</title>
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
-  <script defer src="scripts/join.js"></script>
-  <script src="scripts/nav.js" defer></script>
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:title" content="Worden IL Chamber of Commerce - Join">
+  <meta property="og:description" content="The official home of the Worden Illinois Chamber of Commerce. Learn about our members, join the chamber, and stay updated on local events.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/social-preview.jpg">
+  <meta property="og:url" content="https://samuelbledsoe.github.io/wdd231/chamber/index.html">
 
 </head>
 <body>
   <header>
-    <button id="menuBtn">☰</button>
+    <button id="menuBtn" aria-label="Menu">&#9776;</button>
     <nav id="navMenu">
-      <ul>
+        <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html" class="active">Join</a></li>
-      </ul>
+        <li><a href="join.html" calss="active">Join</a></li>
+        </ul>
     </nav>
   </header>
 
   <main class="form-layout">
+    <h1>Join the Chamber!</h1>
     <form method="get" action="thankyou.html">
       <label>First Name
         <input type="text" name="fname" title="First Name" autocomplete="given-name" required>
@@ -124,5 +130,9 @@
   <footer>
     <p>&copy; 2025 Worden Illinois Chamber of Commerce</p>
   </footer>
+
+  <script defer src="scripts/join.js"></script>
+  <script src="scripts/nav.js" defer></script>
+  
 </body>
 </html>
