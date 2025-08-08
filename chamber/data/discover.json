@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Worden Park",
+    "address": "123 Park Lane, Worden, IL",
+    "description": "A beautiful green space with a playground, walking trails, and a pond.",
+    "image": "images/worden-park.webp"
+  },
+  {
+    "name": "Old Mill Cafe",
+    "address": "456 Main St, Worden, IL",
+    "description": "Charming cafe serving homestyle breakfast and lunch favorites.",
+    "image": "images/old-mill-cafe.webp"
+  },
+  {
+    "name": "Veterans Memorial",
+    "address": "789 Memorial Dr, Worden, IL",
+    "description": "A tribute to local veterans who served our country with honor.",
+    "image": "images/veterans-memorial.webp"
+  },
+  {
+    "name": "Hometown Library",
+    "address": "101 Library Ln, Worden, IL",
+    "description": "A quiet public library with a great collection of books and community events.",
+    "image": "images/library.webp"
+  },
+  {
+    "name": "Country Market",
+    "address": "202 Farm Rd, Worden, IL",
+    "description": "Fresh produce, local crafts, and baked goods every weekend.",
+    "image": "images/country-market.webp"
+  },
+  {
+    "name": "Worden Fire Department",
+    "address": "303 Safety Way, Worden, IL",
+    "description": "Volunteer department serving our community with pride.",
+    "image": "images/fire-department.webp"
+  },
+  {
+    "name": "Historic Train Depot",
+    "address": "404 Tracks Ave, Worden, IL",
+    "description": "Step back in time and explore the town’s historic rail roots.",
+    "image": "images/train-depot.webp"
+  },
+  {
+    "name": "Town Hall",
+    "address": "505 City Plz, Worden, IL",
+    "description": "Administrative center and host of community meetings and events.",
+    "image": "images/town-hall.webp"
+  }
+]
