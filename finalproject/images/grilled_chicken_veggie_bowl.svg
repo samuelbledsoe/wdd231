@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Grilled Chicken & Veggie Bowl illustration</title>
+  <desc id="desc">Flat illustration of a bowl with grilled chicken slices, colorful vegetables, and rice in Budget Muscle Meals colors.</desc>
+
+  <rect width="600" height="400" fill="#F6F8FA"/>
+
+  <defs>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".12"/>
+    </filter>
+    <linearGradient id="bowlGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f0f4f8"/>
+      <stop offset="1" stop-color="#d9e2ec"/>
+    </linearGradient>
+    <linearGradient id="riceGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff" />
+      <stop offset="1" stop-color="#f0f0f0" />
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="40" rx="16" ry="16" width="500" height="320" fill="#ffffff" stroke="#E3E8EF"/>
+  </g>
+
+  <text x="300" y="90" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#2C3E50" font-weight="700">
+    Grilled Chicken & Veggie Bowl
+  </text>
+
+  <g transform="translate(0,10)">
+    <ellipse cx="300" cy="290" rx="170" ry="24" fill="#b8c4d2"/>
+    <path d="M140,240 Q300,285 460,240 L452,292 Q300,335 148,292 Z" fill="url(#bowlGrad)" stroke="#b8c4d2"/>
+    <ellipse cx="300" cy="230" rx="160" ry="45" fill="url(#riceGrad)" stroke="#d1d5db"/>
+
+    <g fill="#f5c16c">
+      <rect x="220" y="205" width="30" height="10" rx="3" transform="rotate(-10 235 210)" />
+      <rect x="255" y="210" width="30" height="10" rx="3" transform="rotate(-5 270 215)" />
+      <rect x="290" y="208" width="30" height="10" rx="3" transform="rotate(5 305 213)" />
+      <rect x="325" y="212" width="30" height="10" rx="3" transform="rotate(10 340 217)" />
+    </g>
+
+    <g fill="#27AE60">
+      <circle cx="240" cy="225" r="8"/>
+      <circle cx="275" cy="235" r="8"/>
+      <circle cx="320" cy="225" r="8"/>
+    </g>
+
+    <g fill="#E74C3C">
+      <circle cx="260" cy="220" r="6"/>
+      <circle cx="300" cy="240" r="6"/>
+      <circle cx="345" cy="230" r="6"/>
+    </g>
+  </g>
+
+  <text x="300" y="350" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">
+    Balanced • ~46g protein • Colorful &amp; nutritious
+  </text>
+</svg>

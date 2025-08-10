@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Turkey Chili illustration</title>
+  <desc id="desc">Flat illustration of a steaming bowl of turkey chili with beans and a spoon, in Budget Muscle Meals colors.</desc>
+
+  <rect width="600" height="400" fill="#F6F8FA"/>
+
+  <defs>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".12"/>
+    </filter>
+    <linearGradient id="bowlGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#e6ecf2"/>
+      <stop offset="1" stop-color="#cfd9e5"/>
+    </linearGradient>
+    <linearGradient id="chiliGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#c44d2d"/>
+      <stop offset="1" stop-color="#a73e23"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="40" rx="16" ry="16" width="500" height="320" fill="#ffffff" stroke="#E3E8EF"/>
+  </g>
+
+  <text x="300" y="90" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#2C3E50" font-weight="700">
+    Turkey Chili
+  </text>
+
+  <g transform="translate(0,6)">
+    <ellipse cx="300" cy="290" rx="170" ry="24" fill="#b8c4d2"/>
+    <path d="M140,240 Q300,285 460,240 L452,292 Q300,335 148,292 Z" fill="url(#bowlGrad)" stroke="#b8c4d2"/>
+    <ellipse cx="300" cy="230" rx="160" ry="45" fill="url(#chiliGrad)" stroke="#8f3a22"/>
+
+    <g fill="#4a2c25" opacity=".9">
+      <ellipse cx="230" cy="225" rx="10" ry="6"/>
+      <ellipse cx="260" cy="238" rx="11" ry="6"/>
+      <ellipse cx="290" cy="220" rx="10" ry="6"/>
+      <ellipse cx="320" cy="235" rx="10" ry="6"/>
+      <ellipse cx="350" cy="222" rx="11" ry="6"/>
+      <ellipse cx="375" cy="238" rx="10" ry="6"/>
+    </g>
+
+    <g fill="#f2d66b">
+      <circle cx="270" cy="225" r="3"/>
+      <circle cx="305" cy="240" r="3"/>
+      <circle cx="335" cy="228" r="3"/>
+      <circle cx="360" cy="234" r="3"/>
+    </g>
+
+    <g fill="#27AE60">
+      <circle cx="245" cy="236" r="3"/>
+      <circle cx="315" cy="224" r="3"/>
+      <circle cx="340" cy="242" r="3"/>
+    </g>
+
+    <g stroke="#cbd5e1" stroke-width="2" fill="none" opacity=".9">
+      <path d="M260,170 q-15,-20 0,-40" />
+      <path d="M300,175 q-15,-22 0,-44" />
+      <path d="M340,170 q-15,-20 0,-40" />
+    </g>
+
+    <g transform="translate(420,200) rotate(18)">
+      <rect x="-6" y="-10" width="12" height="90" rx="6" fill="#cbd5e1"/>
+      <ellipse cx="0" cy="82" rx="20" ry="10" fill="#cbd5e1"/>
+    </g>
+  </g>
+
+  <text x="300" y="350" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">
+    Budget-friendly • ~38g protein • Hearty &amp; filling
+  </text>
+</svg>

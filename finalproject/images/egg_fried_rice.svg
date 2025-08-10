@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Egg Fried Rice illustration</title>
+  <desc id="desc">Flat illustration of a rice bowl with scrambled egg pieces, peas, carrots, and soy sauce accents.</desc>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#F6F8FA"/>
+
+  <!-- Card with soft shadow -->
+  <defs>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".12"/>
+    </filter>
+    <linearGradient id="bowlGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#e6ecf2"/>
+      <stop offset="1" stop-color="#cfd9e5"/>
+    </linearGradient>
+    <linearGradient id="riceGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef2f6"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="40" rx="16" ry="16" width="500" height="320" fill="#ffffff" stroke="#E3E8EF"/>
+  </g>
+
+  <!-- Heading -->
+  <text x="300" y="90" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#2C3E50" font-weight="700">
+    Egg Fried Rice
+  </text>
+
+  <!-- Bowl group -->
+  <g transform="translate(0,10)">
+    <!-- Bowl shadow -->
+    <ellipse cx="300" cy="295" rx="170" ry="24" fill="#cbd5e1"/>
+    <!-- Bowl body -->
+    <path d="M140,242 Q300,287 460,242 L452,294 Q300,337 148,294 Z" fill="url(#bowlGrad)" stroke="#b8c4d2"/>
+    <!-- Rice base -->
+    <ellipse cx="300" cy="235" rx="160" ry="45" fill="url(#riceGrad)" stroke="#d1d5db"/>
+
+    <!-- Rice grains highlights -->
+    <g fill="#e9eef3" opacity=".9">
+      <ellipse cx="240" cy="232" rx="12" ry="4"/>
+      <ellipse cx="260" cy="224" rx="13" ry="4"/>
+      <ellipse cx="280" cy="236" rx="12" ry="4"/>
+      <ellipse cx="315" cy="228" rx="12" ry="4"/>
+      <ellipse cx="340" cy="238" rx="12" ry="4"/>
+    </g>
+
+    <!-- Egg pieces -->
+    <g fill="#f2d66b">
+      <rect x="220" y="222" width="16" height="8" rx="3" transform="rotate(10 228 226)"/>
+      <rect x="260" y="238" width="16" height="8" rx="3" transform="rotate(-8 268 242)"/>
+      <rect x="310" y="226" width="16" height="8" rx="3" transform="rotate(6 318 230)"/>
+      <rect x="350" y="236" width="16" height="8" rx="3" transform="rotate(-12 358 240)"/>
+    </g>
+
+    <!-- Peas -->
+    <g fill="#27AE60">
+      <circle cx="245" cy="232" r="4"/>
+      <circle cx="285" cy="240" r="4"/>
+      <circle cx="330" cy="230" r="4"/>
+      <circle cx="360" cy="238" r="4"/>
+    </g>
+
+    <!-- Carrot bits -->
+    <g fill="#f59e0b">
+      <rect x="235" y="238" width="10" height="4" rx="2" transform="rotate(-8 240 240)"/>
+      <rect x="320" y="236" width="10" height="4" rx="2" transform="rotate(10 325 238)"/>
+    </g>
+
+    <!-- Soy drizzle (light lines) -->
+    <g stroke="#a78b71" stroke-width="2" opacity=".6">
+      <path d="M230,220 q20,6 40,0"/>
+      <path d="M300,245 q20,6 40,0"/>
+    </g>
+  </g>
+
+  <!-- Caption -->
+  <text x="300" y="350" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">
+    Pantry-friendly • ~18g protein • Fast &amp; tasty
+  </text>
+</svg>

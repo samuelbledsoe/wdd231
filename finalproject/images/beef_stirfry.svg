@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Beef Stir-Fry illustration</title>
+  <desc id="desc">Flat illustration of a wok with beef strips, bell peppers, and rice in Budget Muscle Meals colors.</desc>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#F6F8FA"/>
+
+  <!-- Card container with soft shadow -->
+  <defs>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".12"/>
+    </filter>
+    <linearGradient id="wokGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2f3b48"/>
+      <stop offset="1" stop-color="#1f2933"/>
+    </linearGradient>
+    <linearGradient id="riceGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef2f6"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="40" rx="16" ry="16" width="500" height="320" fill="#ffffff" stroke="#E3E8EF"/>
+  </g>
+
+  <!-- Heading -->
+  <text x="300" y="90" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#2C3E50" font-weight="700">
+    Beef Stir-Fry
+  </text>
+
+  <!-- Wok and contents -->
+  <g transform="translate(0,12)">
+    <!-- Wok shadow/base -->
+    <ellipse cx="300" cy="295" rx="180" ry="26" fill="#cbd5e1"/>
+    <!-- Wok body -->
+    <ellipse cx="300" cy="245" rx="170" ry="70" fill="url(#wokGrad)"/>
+    <ellipse cx="300" cy="240" rx="150" ry="50" fill="#2c3742"/>
+
+    <!-- Rice on one side -->
+    <ellipse cx="240" cy="235" rx="70" ry="28" fill="url(#riceGrad)" stroke="#d1d5db"/>
+    <g fill="#e8edf3" opacity=".9">
+      <ellipse cx="220" cy="232" rx="12" ry="4"/>
+      <ellipse cx="240" cy="225" rx="13" ry="4"/>
+      <ellipse cx="260" cy="235" rx="12" ry="4"/>
+      <ellipse cx="235" cy="244" rx="12" ry="4"/>
+    </g>
+
+    <!-- Beef strips -->
+    <g fill="#7a3b2b" stroke="#6a2f22">
+      <rect x="290" y="215" width="55" height="10" rx="5" transform="rotate(12 317 220)"/>
+      <rect x="330" y="230" width="55" height="10" rx="5" transform="rotate(-8 357 235)"/>
+      <rect x="310" y="245" width="55" height="10" rx="5" transform="rotate(6 337 250)"/>
+    </g>
+
+    <!-- Vegetables -->
+    <g>
+      <!-- Red peppers -->
+      <g fill="#E74C3C">
+        <rect x="345" y="210" width="26" height="6" rx="3" transform="rotate(18 358 213)"/>
+        <rect x="360" y="245" width="28" height="6" rx="3" transform="rotate(-14 374 248)"/>
+      </g>
+      <!-- Green peppers -->
+      <g fill="#27AE60">
+        <rect x="295" y="235" width="24" height="6" rx="3" transform="rotate(-6 307 238)"/>
+        <rect x="340" y="220" width="24" height="6" rx="3" transform="rotate(12 352 223)"/>
+      </g>
+      <!-- Carrots -->
+      <g fill="#f59e0b">
+        <rect x="320" y="260" width="22" height="5" rx="3" transform="rotate(8 331 263)"/>
+        <rect x="365" y="230" width="22" height="5" rx="3" transform="rotate(-10 376 233)"/>
+      </g>
+    </g>
+
+    <!-- Steam lines -->
+    <g stroke="#cbd5e1" stroke-width="2" fill="none" opacity=".9">
+      <path d="M270,175 q-15,-22 0,-44" />
+      <path d="M300,180 q-15,-24 0,-48" />
+      <path d="M330,175 q-15,-22 0,-44" />
+    </g>
+
+    <!-- Handle -->
+    <rect x="468" y="228" width="70" height="14" rx="7" fill="#2f3b48"/>
+  </g>
+
+  <!-- Caption -->
+  <text x="300" y="350" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">
+    Quick skillet • ~40g protein • Serve with rice
+  </text>
+</svg>

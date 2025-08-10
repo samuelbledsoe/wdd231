@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Overnight Protein Oats illustration</title>
+  <desc id="desc">Flat illustration of a jar of overnight oats with berries and peanut butter swirl.</desc>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#F6F8FA"/>
+
+  <!-- Card with shadow -->
+  <defs>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".12"/>
+    </filter>
+    <linearGradient id="jarGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#e6ecf2"/>
+      <stop offset="1" stop-color="#cfd9e5"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="40" rx="16" ry="16" width="500" height="320" fill="#ffffff" stroke="#E3E8EF"/>
+  </g>
+
+  <!-- Heading -->
+  <text x="300" y="90" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#2C3E50" font-weight="700">
+    Overnight Protein Oats
+  </text>
+
+  <!-- Jar of oats -->
+  <g transform="translate(0,10)">
+    <!-- Shadow -->
+    <ellipse cx="300" cy="292" rx="140" ry="20" fill="#cbd5e1"/>
+    <!-- Jar body -->
+    <rect x="235" y="160" width="130" height="120" rx="16" fill="url(#jarGrad)" opacity=".9" stroke="#b8c4d2"/>
+    <!-- Oats mixture -->
+    <rect x="245" y="170" width="110" height="100" rx="12" fill="#f1e6cf" stroke="#e2d6bb"/>
+    <!-- PB swirl -->
+    <path d="M255,200 q50,20 90,0" stroke="#c98952" stroke-width="6" fill="none" opacity=".8"/>
+    <path d="M255,215 q50,20 90,0" stroke="#c98952" stroke-width="6" fill="none" opacity=".7"/>
+    <!-- Berries on top -->
+    <g>
+      <circle cx="270" cy="185" r="7" fill="#E74C3C"/>
+      <circle cx="295" cy="180" r="7" fill="#2C3E50"/>
+      <circle cx="330" cy="185" r="7" fill="#E74C3C"/>
+      <circle cx="315" cy="175" r="7" fill="#2C3E50"/>
+    </g>
+    <!-- Lid -->
+    <rect x="240" y="150" width="120" height="16" rx="8" fill="#b8c4d2"/>
+  </g>
+
+  <!-- Caption -->
+  <text x="300" y="350" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">
+    No-cook prep • ~28g protein • Grab &amp; go
+  </text>
+</svg>
