@@ -39,6 +39,25 @@
     <h2>Featured Meals</h2>
     <div id="featured-grid" class="grid"></div>
   </section>
+
+  <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-content" tabindex="-1">
+      <button id="modal-close" aria-label="Close modal">×</button>
+      <h3 id="modal-title"></h3>
+      <img id="modal-image" alt="" loading="lazy">
+      <div class="modal-body">
+        <p>
+          <strong>Calories:</strong> <span id="m-cal"></span> • 
+          <strong>Protein:</strong> <span id="m-pro"></span>g • 
+          <strong>Cost:</strong> $<span id="m-cost"></span>
+        </p>
+        <h4>Ingredients</h4>
+        <ul id="m-ingredients"></ul>
+        <h4>Steps</h4>
+        <ol id="m-steps"></ol>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer class="site-footer">
