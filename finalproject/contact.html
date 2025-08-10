@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact | Budget Muscle Meals</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Send feedback or request a custom meal plan.">
+  <meta name="author" content="Samuel Bledsoe">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og.png">
+  <meta property="og:site_name" content="Budget Muscle Meals">
+  <meta property="og:title" content="Contact | Budget Muscle Meals">
+  <meta property="og:description" content="Send feedback or request a custom meal plan.">
+
+  <!-- Styles (adjust path if your CSS lives elsewhere) -->
+  <link rel="preload" href="styles/css.css" as="style">
+  <link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Budget <span>Muscle</span> Meals</a>
+    <button id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <nav id="site-nav" class="nav" hidden>
+      <a href="index.html">Home</a>
+      <a href="meals.html">Meal Plans</a>
+      <a href="hacks.html">Grocery Hacks</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+  <h1>Contact</h1>
+
+  <form id="contact-form" action="thanks.html" method="get">
+    <!-- Name + Email row -->
+    <div class="row">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+    </div>
+
+    <!-- Preferences box -->
+    <fieldset class="prefs">
+      <legend>Preferences</legend>
+      <label><input type="checkbox" name="pref" value="vegetarian"> Vegetarian</label>
+      <label><input type="checkbox" name="pref" value="no-dairy"> No dairy</label>
+      <label><input type="checkbox" name="pref" value="low-carb"> Low carb</label>
+    </fieldset>
+
+    <!-- Message box -->
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Tell us your goals, allergies, or timing…"></textarea>
+    </div>
+
+    <button type="submit">Send</button>
+  </form>
+</main>
+
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Budget Muscle Meals • <a href="attributions.html">Attributions</a> • <a href="#" id="video-link">Project Demo Video</a></p>
+  </footer>
+
+  <!-- Nav + wayfinding -->
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

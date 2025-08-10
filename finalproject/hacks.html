@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grocery Hacks | Budget Muscle Meals</title>
+  <meta name="description" content="Money-saving grocery strategies for high-protein eating on a budget.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Samuel Bledsoe">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og.png">
+  <meta property="og:site_name" content="Budget Muscle Meals">
+  <link rel="preload" href="styles/css.css" as="style">
+  <link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Budget <span>Muscle</span> Meals</a>
+  <button id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+  <nav id="site-nav" class="nav" hidden>
+    <a href="index.html">Home</a>
+    <a href="meals.html">Meal Plans</a>
+    <a href="hacks.html">Grocery Hacks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="content">
+    <h1>Grocery Hacks</h1>
+    <ul class="tips">
+      <li>Buy protein in bulk (chicken thighs, eggs, beans) and freeze portions.</li>
+      <li>Use unit pricing to compare value across sizes and brands.</li>
+      <li>Plan 2–3 base recipes and remix with sauces/spices.</li>
+      <li>Choose frozen vegetables over fresh to reduce waste.</li>
+    </ul>
+  </section>
+
+  <section class="calc">
+    <h2>Weekly Cost Calculator</h2>
+    <form id="calc-form">
+      <label>Meals per day <input type="number" id="meals-per-day" min="1" value="3" required></label>
+      <label>Avg cost per meal ($) <input type="number" id="cost-per-meal" min="0" step="0.01" value="2.75" required></label>
+      <button type="submit">Estimate Weekly Cost</button>
+    </form>
+    <p id="calc-result" aria-live="polite"></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2025 Budget Muscle Meals • <a href="attributions.html">Attributions</a> • <a href="#" id="video-link">Project Demo Video</a></p>
+</footer>
+
+<script type="module" src="scripts/hacks.js"></script>
+</body>
+</html>

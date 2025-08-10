@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "name": "Meal 1",
+    "calories": 350,
+    "protein_g": 30,
+    "cost_usd": 2.5,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_1.svg"
+  },
+  {
+    "id": 2,
+    "name": "Meal 2",
+    "calories": 450,
+    "protein_g": 38,
+    "cost_usd": 3.25,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_2.svg"
+  },
+  {
+    "id": 3,
+    "name": "Meal 3",
+    "calories": 550,
+    "protein_g": 46,
+    "cost_usd": 4,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_3.svg"
+  },
+  {
+    "id": 4,
+    "name": "Meal 4",
+    "calories": 650,
+    "protein_g": 54,
+    "cost_usd": 4.75,
+    "tags": ["budget", "high-protein", "vegetarian"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_4.svg"
+  },
+  {
+    "id": 5,
+    "name": "Meal 5",
+    "calories": 750,
+    "protein_g": 30,
+    "cost_usd": 2.5,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_5.svg"
+  },
+  {
+    "id": 6,
+    "name": "Meal 6",
+    "calories": 350,
+    "protein_g": 38,
+    "cost_usd": 3.25,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_6.svg"
+  },
+  {
+    "id": 7,
+    "name": "Meal 7",
+    "calories": 450,
+    "protein_g": 46,
+    "cost_usd": 4,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_7.svg"
+  },
+  {
+    "id": 8,
+    "name": "Meal 8",
+    "calories": 550,
+    "protein_g": 54,
+    "cost_usd": 4.75,
+    "tags": ["budget", "high-protein", "vegetarian"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_8.svg"
+  },
+  {
+    "id": 9,
+    "name": "Meal 9",
+    "calories": 650,
+    "protein_g": 30,
+    "cost_usd": 2.5,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_9.svg"
+  },
+  {
+    "id": 10,
+    "name": "Meal 10",
+    "calories": 750,
+    "protein_g": 38,
+    "cost_usd": 3.25,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_10.svg"
+  },
+  {
+    "id": 11,
+    "name": "Meal 11",
+    "calories": 350,
+    "protein_g": 46,
+    "cost_usd": 4,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_11.svg"
+  },
+  {
+    "id": 12,
+    "name": "Meal 12",
+    "calories": 450,
+    "protein_g": 54,
+    "cost_usd": 4.75,
+    "tags": ["budget", "high-protein", "vegetarian"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_12.svg"
+  },
+  {
+    "id": 13,
+    "name": "Meal 13",
+    "calories": 550,
+    "protein_g": 30,
+    "cost_usd": 2.5,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_13.svg"
+  },
+  {
+    "id": 14,
+    "name": "Meal 14",
+    "calories": 650,
+    "protein_g": 38,
+    "cost_usd": 3.25,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_14.svg"
+  },
+  {
+    "id": 15,
+    "name": "Meal 15",
+    "calories": 750,
+    "protein_g": 46,
+    "cost_usd": 4,
+    "tags": ["budget", "high-protein"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_15.svg"
+  },
+  {
+    "id": 16,
+    "name": "Meal 16",
+    "calories": 350,
+    "protein_g": 54,
+    "cost_usd": 4.75,
+    "tags": ["budget", "high-protein", "vegetarian"],
+    "ingredients": ["Ingredient A", "Ingredient B", "Ingredient C"],
+    "steps": ["Mix ingredients.", "Cook for 10 minutes.", "Serve warm."],
+    "image": "images/meal_16.svg"
+  }
+]

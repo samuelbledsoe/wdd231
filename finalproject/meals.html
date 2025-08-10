@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Meal Plans | Budget Muscle Meals</title>
+  <meta name="description" content="Explore affordable meal ideas with calories, protein, cost, and ingredients.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Samuel Bledsoe">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og.png">
+  <meta property="og:site_name" content="Budget Muscle Meals">
+  <link rel="preload" href="styles/css.css" as="style">
+  <link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Budget <span>Muscle</span> Meals</a>
+  <button id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+  <nav id="site-nav" class="nav" hidden>
+    <a href="index.html">Home</a>
+    <a href="meals.html">Meal Plans</a>
+    <a href="hacks.html">Grocery Hacks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="controls">
+    <label>Calorie target:
+      <select id="calorie-filter">
+        <option value="all">All</option>
+        <option value="1800">~1800 kcal/day</option>
+        <option value="2200">~2200 kcal/day</option>
+        <option value="2500">~2500 kcal/day</option>
+      </select>
+    </label>
+    <label>View:
+      <select id="view-select">
+        <option value="grid">Grid</option>
+        <option value="list">List</option>
+      </select>
+    </label>
+    <input id="search" type="search" placeholder="Search meals by name or tag" aria-label="Search meals">
+  </section>
+
+  <section>
+    <div id="meal-grid" class="grid"></div>
+  </section>
+</main>
+
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-content" tabindex="-1">
+    <button id="modal-close" aria-label="Close modal">×</button>
+    <h3 id="modal-title"></h3>
+    <img id="modal-image" alt="" loading="lazy">
+    <div class="modal-body">
+      <p>
+        <strong>Calories:</strong> <span id="m-cal"></span> • 
+        <strong>Protein:</strong> <span id="m-pro"></span>g • 
+        <strong>Cost:</strong> $<span id="m-cost"></span>
+      </p>
+      <h4>Ingredients</h4>
+      <ul id="m-ingredients"></ul>
+      <h4>Steps</h4>
+      <ol id="m-steps"></ol>
+    </div>
+  </div>
+</div>
+
+
+<footer class="site-footer">
+  <p>&copy; 2025 Budget Muscle Meals • <a href="attributions.html">Attributions</a> • <a href="#" id="video-link">Project Demo Video</a></p>
+</footer>
+
+<script type="module" src="scripts/meals.js"></script>
+</body>
+</html>

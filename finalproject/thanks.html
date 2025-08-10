@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Thanks | Budget Muscle Meals</title>
+  <meta name="description" content="Form submission results for Budget Muscle Meals.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Samuel Bledsoe">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og.png">
+  <meta property="og:site_name" content="Budget Muscle Meals">
+  <link rel="preload" href="styles/css.css" as="style">
+  <link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Budget <span>Muscle</span> Meals</a>
+  <button id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+  <nav id="site-nav" class="nav" hidden>
+    <a href="index.html">Home</a>
+    <a href="meals.html">Meal Plans</a>
+    <a href="hacks.html">Grocery Hacks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Thanks!</h1>
+  <p>Here is what you submitted:</p>
+  <dl id="results"></dl>
+  <p><a href="index.html">Return to Home</a></p>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2025 Budget Muscle Meals • <a href="attributions.html">Attributions</a> • <a href="#" id="video-link">Project Demo Video</a></p>
+</footer>
+
+<script type="module" src="scripts/main.js"></script>
+
+<script type="module">
+  const dl = document.getElementById('results');
+  const params = new URLSearchParams(window.location.search);
+  for (const [key, value] of params.entries()) {
+    const dt = document.createElement('dt'); dt.textContent = key;
+    const dd = document.createElement('dd'); dd.textContent = value;
+    dl.append(dt, dd);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,470 @@
+:root {
+    --primary: #2C3E50;
+    --accent: #27AE60;
+    --text: #333;
+    --bg: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--accent);
+}
+
+/* Header & Nav */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.brand {
+    font-weight: 800;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.brand span {
+    color: var(--accent);
+}
+
+#nav-toggle {
+    font-size: 1.4rem;
+    background: none;
+    border: 1px solid #cbd5e1;
+    border-radius: .5rem;
+    padding: .25rem .5rem;
+}
+
+.nav a {
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.nav.open {
+    display: block;
+}
+
+@media (min-width: 700px) {
+    #nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: flex !important;
+        gap: .75rem;
+    }
+}
+
+/* Main layout */
+main {
+    padding: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Hero section */
+.hero {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .08);
+}
+
+.hero .cta {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: .75rem 1rem;
+    border-radius: .75rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Cards & grids */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card .p {
+    padding: 0 1rem 1rem;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.controls label {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+/* Form elements */
+input,
+select,
+textarea,
+button {
+    padding: .5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: .5rem;
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    background: var(--primary);
+    color: #fff;
+}
+
+button[type="submit"] {
+    background: var(--accent);
+}
+
+/* Footer */
+.site-footer {
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    background: #fff;
+    margin-top: 2rem;
+}
+
+/* Modal */
+#modal[hidden] {
+    display: none;
+}
+
+#modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.modal-content {
+    background: #fff;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 1rem;
+    position: relative;
+}
+
+#modal-close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    background: #ef4444;
+    border: none;
+}
+
+/* List view toggle */
+.list .card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.list .card img {
+    max-width: 220px;
+}
+
+
+/* Force single column when in list view */
+.grid.list {
+    grid-template-columns: 1fr;
+}
+
+/* Make each card a horizontal row */
+.list .card {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.list .card img {
+    max-width: 220px;
+    height: auto;
+}
+
+/* Make the dialog content scroll within the viewport */
+#modal {
+    padding: 1rem;
+}
+
+.modal-content {
+    max-height: 90vh;       /* fit within the viewport */
+    overflow: auto;         /* scroll inside the dialog */
+}
+
+/* Keep the close button visible while scrolling */
+#modal-close {
+    position: sticky;       /* was absolute */
+    top: 0;
+    margin-left: auto;
+    display: inline-block;
+    z-index: 1;
+}
+
+/* Tighter spacing for mobile so overlay is clickable around the card */
+@media (max-width: 540px) {
+    .modal-content {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+}
+
+/* CONTACT FORM CLEANUP */
+#contact-form {
+  display: grid;
+  gap: 1rem 1.25rem;
+  max-width: 900px;
+}
+
+#contact-form label {
+  display: block;                 /* put label above control */
+  font-weight: 700;
+  margin-bottom: .25rem;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+  width: 100%;
+  padding: .65rem .8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: .5rem;
+  font: inherit;
+}
+
+/* Make top three controls appear side‑by‑side on larger screens */
+@media (min-width: 800px) {
+  /* Name + Email + Calorie target are the first 3 controls after the <h1> */
+  #contact-form > label[for="name"],      /* label */
+  #contact-form > input#name,             /* input */
+  #contact-form > label[for="email"],
+  #contact-form > input#email,
+  #contact-form > label[for="calorie"],
+  #contact-form > select#calorie {
+    grid-column: span 1;
+  }
+
+  #contact-form {
+    grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
+    align-items: end;
+  }
+
+  /* Make the fieldset, message, and button span all columns */
+  #contact-form fieldset,
+  #contact-form label[for="message"],
+  #contact-form textarea#message,
+  #contact-form button[type="submit"] {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Fieldset styling */
+#contact-form fieldset {
+  border: 1px solid #cbd5e1;
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+}
+
+#contact-form legend {
+  padding: 0 .4rem;
+  font-weight: 700;
+}
+
+/* Button placement + look */
+#contact-form button[type="submit"] {
+  justify-self: start;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: .6rem 1rem;
+  border-radius: .6rem;
+}
+
+/* Contact form layout */
+#contact-form {
+  display: grid;
+  gap: 1rem 1.25rem;
+  max-width: 900px;
+}
+
+#contact-form .field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: .35rem;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+  width: 100%;
+  padding: .65rem .8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: .5rem;
+  font: inherit;
+}
+
+/* Top row: Name | Email | Calorie (small) */
+#contact-form .row {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Desktop layout */
+@media (min-width: 900px) {
+  #contact-form .row {
+    grid-template-columns: 1fr 1fr 220px; /* Name (1fr) | Email (1fr) | Calorie (220px) */
+    align-items: end;
+  }
+}
+
+/* Fieldset styles */
+#contact-form fieldset {
+  border: 1px solid #cbd5e1;
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+}
+#contact-form legend {
+  padding: 0 .4rem;
+  font-weight: 700;
+}
+
+/* Checkbox grid inside fieldset */
+#contact-form .prefs {
+  display: grid;
+  gap: .5rem 1.25rem;
+}
+@media (min-width: 600px) {
+  #contact-form .prefs {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+
+/* Button placement */
+#contact-form button[type="submit"] {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: .6rem 1rem;
+  border-radius: .6rem;
+  width: max-content;
+  justify-self: start;    /* left on mobile */
+}
+@media (min-width: 900px) {
+  #contact-form button[type="submit"] {
+    justify-self: end;    /* right on desktop */
+  }
+}
+
+/* CONTACT FORM LAYOUT */
+#contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: fit-content;
+}
+
+#contact-form .row {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 700px) {
+  #contact-form .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+/* Preferences box just fits its contents */
+#contact-form .prefs {
+  display: inline-grid;
+  gap: 0.5rem 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  width: fit-content;
+}
+
+#contact-form legend {
+  font-weight: 700;
+  padding: 0 0.4rem;
+}
+
+#contact-form button[type="submit"] {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  width: max-content;
+}
