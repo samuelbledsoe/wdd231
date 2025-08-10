@@ -468,3 +468,16 @@ button[type="submit"] {
   border-radius: 0.6rem;
   width: max-content;
 }
+
+#nav-toggle { 
+  color: var(--primary); 
+} /* ensures the SVG lines are visible */
+
+/* Wayfinding – highlight current page link */
+.nav a[aria-current="page"] {
+  background: var(--accent);
+  color: #fff !important;
+  border-radius: .5rem;
+  font-weight: 700;
+}
+

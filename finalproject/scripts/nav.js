@@ -17,11 +17,21 @@ export function initNav() {
 }
 
 export function markCurrent() {
-    const links = document.querySelectorAll('#site-nav a');
-    links.forEach(a => {
-        if (a.getAttribute('href') && location.pathname.endsWith(a.getAttribute('href'))) {
-            a.setAttribute('aria-current', 'page');
-            a.classList.add('current');
-        }
-    });
+  const links = document.querySelectorAll('#site-nav a');
+  // Normalize current path so "/" and "/index.html" both match "index.html"
+  let current = location.pathname;
+  if (current.endsWith('/')) current += 'index.html';
+
+  links.forEach(a => {
+    const linkPath = new URL(a.href, location.href).pathname;
+    const normalizedLink =
+      linkPath.endsWith('/') ? linkPath + 'index.html' : linkPath;
+
+    if (current === normalizedLink) {
+      a.setAttribute('aria-current', 'page'); // CSS will style this
+    } else {
+      a.removeAttribute('aria-current');
+    }
+  });
 }
+
